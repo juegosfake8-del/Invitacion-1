@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AVIVAMIENTO | Muy Pronto</title>
+<style>
+html, body {
+  margin: 0;
+  height: 100%;
+  background: #050303;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+.pantalla {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: radial-gradient(circle at center,
+              rgba(20, 75, 145, .25),
+              rgba(5, 20, 45, .15) 40%,
+              transparent 72%),
+              #050303;
+  box-shadow: inset 0 0 80px rgba(20, 80, 150, .55);
+}
+
+.aviso-linea {
+  font-size: clamp(20px, 6vw, 32px);
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-shadow: 0 0 8px rgba(255,255,255,.3);
+}
+
+.aviso-titulo {
+  font-size: clamp(28px, 8vw, 48px);
+  font-weight: 950;
+  letter-spacing: -1.5px;
+  margin-top: 10px;
+  text-shadow: 0 0 12px rgba(30,120,255,.8);
+  animation: palpitar 1s ease-in-out infinite;
+}
+
+.aviso-pronto {
+  font-size: clamp(18px, 5.5vw, 28px);
+  font-weight: 900;
+  color: #ffb15c;
+  margin-top: 20px;
+  text-shadow: 0 0 12px rgba(255,120,20,.7);
+  animation: palpitarPronto 1.2s ease-in-out infinite;
+}
+
+@keyframes palpitar {
+  0%,100% { transform: scale(1); opacity:.9; }
+  50% { transform: scale(1.05); opacity:1; }
+}
+
+@keyframes palpitarPronto {
+  0%,100% { transform: scale(1); opacity:.8; }
+  50% { transform: scale(1.08); opacity:1; }
+}
+</style>
+</head>
+<body>
+  <div class="pantalla">
+    <div>
+      <div class="aviso-linea">CULTO DE</div>
+      <div class="aviso-titulo">🔥AVIVAMIENTO🔥</div>
+      <div class="aviso-pronto">MUY PRONTOOO</div>
+    </div>
+  </div>
+</body>
+</html>
+
